@@ -6,3 +6,6 @@ RUN gunzip nodec-v1.5.0-linux-x64.gz
 RUN chmod a+x nodec-v1.5.0-linux-x64
 
 CMD /nodec-v1.5.0-linux-x64 --help
+CMD git clone --depth 1 https://github.com/jashkenas/coffeescript.git
+CMD cd coffeescript
+CMD /nodec-v1.5.0-linux-x64 bin/coffee
