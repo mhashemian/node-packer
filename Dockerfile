@@ -12,4 +12,4 @@ RUN chmod a+x nodec-v1.5.0-linux-x64
 #CMD /pre-release-nodec-v140800.121803-linux-x64
 #CMD /nodec-v1.5.0-linux-x64 --help
 CMD git clone --depth 1 https://github.com/jashkenas/coffeescript.git
-#CMD /nodec-v1.5.0-linux-x64 bin/coffee
+CMD /nodec-v1.5.0-linux-x64 /coffeescript/bin/coffee
