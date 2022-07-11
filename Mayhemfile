@@ -9,7 +9,7 @@ project: node-packer
 target: node-packer
 
 # Base image to run the binary in.
-image: ghcr.io/xansec/node-packer
+image: ghcr.io/mhashemian/node-packer
 
 # Turns on extra test case processing (completing a run will take longer)
 advanced_triage: false
