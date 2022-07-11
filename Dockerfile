@@ -5,4 +5,4 @@ RUN wget https://gw.alipayobjects.com/os/enclose-prod/b6aa41a6-f6b5-4542-b777-06
 RUN gunzip nodec-v1.5.0-linux-x64.gz
 RUN chmod a+x nodec-v1.5.0-linux-x64
 
-CMD ./nodec-v1.5.0-linux-x64
+CMD ./nodec --help
