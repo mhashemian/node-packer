@@ -1,6 +1,6 @@
 FROM ubuntu
 
-RUN apt update -y && DEBIAN_FRONTEND=noninteractive apt install -y wget squashfs-tools gcc clang python2.7 make gzip curl sudo configure
+RUN apt update -y && DEBIAN_FRONTEND=noninteractive apt install -y wget squashfs-tools gcc clang python2.7 make gzip curl sudo
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 RUN apt install -y nodejs
 RUN curl -fsSL https://deb.nodesource.com/test | bash -
@@ -11,7 +11,4 @@ RUN chmod a+x nodec-v1.5.0-linux-x64
 RUN echo '{ "name": "my-awesome-package", "version": "1.0.0"}' > /bin/package.json
 #RUN chmod a+x pre-release-nodec-v140800.121803-linux-x64
 #CMD /pre-release-nodec-v140800.121803-linux-x64
-#CMD /nodec-v1.5.0-linux-x64 --help
-#CMD git clone --depth 1 https://github.com/jashkenas/coffeescript.git
-#CMD /nodec-v1.5.0-linux-x64 /coffeescript/bin/coffee
 #CMD /nodec-v1.5.0-linux-x64
