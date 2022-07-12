@@ -21,7 +21,7 @@ cmds:
   # (when "@@" is omitted Mayhem defaults to stdin inputs)
   - cmd: /nodec-v1.5.0-linux-x64 @@
 
-    #filepath: /tmp/package.json
+    filepath: /tmp/package.json
     
     ## Uncomment to change default dir (/) from which the target is invoked
     #cwd: /
