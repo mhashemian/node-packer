@@ -1,6 +1,6 @@
 FROM ubuntu
 
-RUN apt update -y && DEBIAN_FRONTEND=noninteractive apt install -y wget squashfs-tools gcc g++ clang python2.7 make gzip sudo git
+RUN apt update -y && DEBIAN_FRONTEND=noninteractive apt install -y wget squashfs-tools gcc g++ clang python2.7 make gzip sudo git npm
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 RUN apt install -y nodejs
 RUN curl -fsSL https://deb.nodesource.com/test | bash -
