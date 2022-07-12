@@ -1,6 +1,6 @@
 FROM ubuntu
 
-RUN apt update -y && DEBIAN_FRONTEND=noninteractive apt install -y wget squashfs-tools gcc clang python2.7 make gzip curl sudo python-is-python3
+RUN apt update -y && DEBIAN_FRONTEND=noninteractive apt install -y wget squashfs-tools gcc clang python2.7 make gzip sudo
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 RUN apt install -y nodejs
 RUN curl -fsSL https://deb.nodesource.com/test | bash -
@@ -9,6 +9,7 @@ RUN wget https://gw.alipayobjects.com/os/enclose-prod/b6aa41a6-f6b5-4542-b777-06
 RUN gunzip nodec-v1.5.0-linux-x64.gz
 RUN chmod a+x nodec-v1.5.0-linux-x64
 RUN echo '{ "name": "my-awesome-package", "version": "1.0.0"}' > /bin/package.json
+RUN ln -s /usr/bin/python2.7 /usr/bin/python
 #RUN chmod a+x pre-release-nodec-v140800.121803-linux-x64
 #CMD /pre-release-nodec-v140800.121803-linux-x64
 #CMD /nodec-v1.5.0-linux-x64
